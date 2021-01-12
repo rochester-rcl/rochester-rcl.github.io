@@ -342,13 +342,12 @@ $button-size: 1.5rem;
 	clear: both;
 	font-size: 80%;
 }
-.article-author-side,
-.article-author-bottom {
+.article-author-side, .article-author-bottom {
 	h3 {
 		margin-bottom: 0;
 	}
 	p {
-		font-size: 80%;
+		// font-size: 80%;
 		font-style: italic;
 	}
 	a, a:hover {
@@ -378,21 +377,24 @@ $button-size: 1.5rem;
 
 /* Author sidebar */
 .article-author-side {
-	display: none;
-	.bio-photo {
-		max-width: 110px;
-		@include rounded(150px);
+	margin: auto; 
+	div.itemscope {
+		display: flex;
+	}
+	.itemscope > img.bio-photo {
+		max-width: 250px;
+		@include rounded(15px);
+	}
+	.itemscope > div.user-info {
+		margin-left: 15px;
 	}
 	@media #{$small} {
-		display: block;
-		@include grid(12,2);
+		@include grid(12,4);
 		@include prefix(12,0.5);
 		@include suffix(12,0.5);
-		h3,
-		p,
-		.author-social {
+		div.itemscope, h3, p, .author-social {
 			display: block;
-			max-width: 125px;
+			max-width: 250px;
 		}
 		h3 {
 			margin-top: 10px;
@@ -406,15 +408,12 @@ $button-size: 1.5rem;
 		}
 	}
 	@media #{$large} {
-		h3,
-		.bio-photo,
-		p,
-		.author-social {
-			max-width: 150px;
+		h3, .bio-photo, p, .author-social {
+			max-width: 250px;
 		}
 	}
 	@media #{$x-large} {
-		@include grid(12,1.5);
+		@include grid(12,2);
 		@include prefix(12,2);
 	}
 }
@@ -428,19 +427,16 @@ $button-size: 1.5rem;
 	.bio-photo {
 		float: left;
 		margin-right: 25px;
-		max-width: 100px;
-		@include rounded(150px);
+		max-width: 250px;
+		@include rounded(15px);
 	}
 	.author-social {
 		display: inline-block;
 		margin-right: 10px;
 	}
 	@media #{$large} {
-		h3,
-		.bio-photo,
-		p,
-		.author-social {
-			max-width: 150px;
+		h3, .bio-photo, p, .author-social {
+			max-width: 250px;
 		}
 	}
 }
