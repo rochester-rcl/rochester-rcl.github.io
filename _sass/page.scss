@@ -380,18 +380,24 @@ $button-size: 1.5rem;
 	margin: auto; 
 	div.itemscope {
 		display: flex;
+		flex-wrap: wrap;
+		margin: auto;
 	}
 	.itemscope > img.bio-photo {
 		max-width: 250px;
+		margin: auto;
 		@include rounded(15px);
 	}
 	.itemscope > div.user-info {
-		margin-left: 15px;
+		margin: auto;
+		min-width: 200px;
+		max-width: 250px;
 	}
 	@media #{$small} {
 		@include grid(12,4);
 		@include prefix(12,0.5);
 		@include suffix(12,0.5);
+		.itemscope > div.user-info { max-width: 225px; }
 		div.itemscope, h3, p, .author-social {
 			display: block;
 			max-width: 250px;
@@ -401,6 +407,7 @@ $button-size: 1.5rem;
 			margin-bottom: 10px;
 		}
 		p {
+			margin-top: 5px;
 			margin-bottom: 20px;
 		}
 		.author-social {
