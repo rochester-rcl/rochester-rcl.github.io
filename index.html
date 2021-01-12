@@ -1,0 +1,221 @@
+<head>
+  <script type="text/javascript">
+    function copyToClipboard(querySelection){
+      let text = document.querySelector(querySelection).innerHTML;
+      navigator.clipboard.writeText(text)
+        .then(function(){
+          alert("copied");
+        }, function(){
+          alert("unable to copy. try selecting the content manually, right-clicking, and pressing 'copy'");
+        }
+      );
+    }
+    const config_yml = (parsedData) => {
+return `
+# Site wide configuration
+
+title: ${parsedData["name"]}
+locale: en_US
+logo: logo.png # filename of a logo image that has been placed into your images directory
+
+# Enter the following platform usernames if you would like for them to appear on your site.
+owner:
+  name: ${parsedData["name"]}
+  avatar: #bio-photo.jpg
+  bio: ${parsedData["bio"]}
+  email: ${parsedData["email"]}
+  twitter: ${parsedData["twitter"].replace("@","") || "#twitter username (no '@')" }
+  linkedin: ${parsedData["linkedin"].replace("@","") || "#linkedin" }
+  github: ${parsedData["github"]}
+  orcid: ${parsedData["orcid"] || "# ID Number (ex. 0000-0000-0000-0000)" }
+  researchgate: ${parsedData["researchgate"] || "#researchgate username" } 
+  mendeley: ${parsedData["mendeley"] || "#mendeley username" } 
+  google:
+    plus: #username
+    analytics:
+    verify:
+    scholar: ${parsedData["scholar"] || "#google scholar 'user' id" } 
+  facebook: #username
+  instagram: #username
+  bing-verify:
+  stackoverflow: #123456/username from a "https://stackoverflow.com/users/123456/username" link
+  xing: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
+  disqus-shortname: #username
+
+# The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
+# you may do so in _sass/variables.scss
+highlight-color: '#FFC70A' #UR gold
+lowlight-color: '#073661' #UR navy
+
+  # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
+creative-commons:
+  cc-by: #yes
+  cc-by-nc: #yes
+
+#DO NOT EDIT BEYOND THIS POINT
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+`
+  };
+  </script>
+</head>
+<body>
+  <script type="text/javascript">
+    function submitConfig(){
+      let form = document.getElementById("config-form");
+      let formData = Object.values(form).reduce((obj,field) => { obj[field.name] = field.value; return obj }, {});
+
+      if(form.checkValidity()){ // if required fields are present, update the output pane
+        document.getElementById("config-yml").innerHTML = config_yml(formData);
+        document.getElementById("copy-btn").hidden = false;
+      }else{
+        document.getElementById("copy-btn").hidden = true;
+        document.getElementById("config-yml").innerText = `Please fill in all required fields!`;
+      }
+    }
+  </script>
+  <style type="text/css">
+    main { display: flex; flex-wrap: wrap; }
+    main > section#input { 
+      width: 45%; 
+      margin-right:10px; 
+      min-width: 350px;
+      background-color: white; 
+    }
+
+    main > section#output { 
+      width: 50%; 
+      min-width: 350px;
+      max-height: 90vh;
+      padding: 10px;
+      background-color: gainsboro;
+      overflow-y: scroll;
+    } 
+    form p {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    input, textarea, select, button {
+      box-sizing: border-box;
+      width: 200px;
+      margin: 0;
+      padding: 0;
+    }
+    output { max-width: 75px; }
+  </style>
+  <main>
+    <section id="input">
+      <form id="config-form" onchange="submitConfig(); event.preventDefault();" oninput="bio.value = role.value +' at University of Rochester studying ' + field.value ">
+        <h2>General Configuration Form</h2>
+        <p>Input the following information and see the output on the right</p>
+
+        <section id="info">
+          <h3>Required Information</h2>
+          <p>
+            <label for="name">Full Name </label>
+            <input id="name" name="name" type="text" placeholder="Sarah Pugachev" required>
+          </p>
+          <p>
+            <label>UR Email </label>
+            <input id="email" name="email" type="email" placeholder="sarah.pugachev@rochester.edu" required>
+          </p>
+          <p>
+            <label for="github">Github </label>
+            <input id="github" name="github" type="text" placeholder="sclayton29" required>
+          </p>
+          <p>
+            <label for="role">Role at UofR</label>
+            <select id="role" required>
+              <option>Undergraduate Student</option>
+              <option>Graduate Student</option>
+              <option>Researcher</option>
+              <option>Professor</option>
+              <option>Staff</option>
+            </select>
+          </p>
+          <p>
+            <label for="field">Field/Department/Specialty </label>
+            <input id="field" name="field" type="text" placeholder="Chemistry" required>
+          </p>
+          <p>
+            <strong>output bio: </strong>
+            <em><output name="bio" for="role field">University of Rochester Affiliate</output></em>
+          </p>
+        </section>
+        <section id="accounts">
+          <h3>Additional Accounts and IDs</h2>
+          <p>
+            <label for="orcid">Orcid </label>
+            <input id="orcid" name="orcid" type="text" placeholder="0000-0003-2672-208X">
+          </p>
+          <p>
+            <label for="scholar">Google Scholar ID </label>
+            <input id="scholar" name="scholar" type="text" placeholder="rnl83BsAAAAJ">
+          </p>
+          <p>
+            <label for="twitter">Twitter @</label>
+            <input id="twitter" name="twitter" type="text" placeholder="sclayton29">
+          </p>
+          <p>
+            <label for="linkedin">LinkedIn </label>
+            <input id="linkedin" name="linkedin" type="text" placeholder="sarah-pugachev-1562212a">
+          </p>
+          <p>
+            <label for="mendeley">Mendeley </label>
+            <input id="mendeley" name="mendeley" type="text" placeholder="">
+          </p>
+          <p>
+            <label for="researchgate">ResearchGate </label>
+            <input id="researchgate" name="researchgate" type="text" placeholder="">
+          </p>
+        </section>
+      </form>
+    </section>
+
+    <section id="median"></section>
+
+    <section id="output">
+      <h2>Output Configuration <button id="copy-btn" hidden onclick="copyToClipboard('#config-yml')">copy output</button></h2>
+      <p>
+        <em>
+          A copy of the config will appear after all required fields are filled in.
+          Once it appears, click on the "copy output" button to add it to your clipboard, 
+          then use it to replace the existing contents of your <code>_config.yml</code> file
+        </em>
+      </p>
+      <textarea style="width: 100%; height:100%;" readonly id="config-yml">Please fill in all required fields!</textarea>
+    </section>
+  </main>
+</body>

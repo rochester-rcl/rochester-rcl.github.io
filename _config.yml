@@ -1,27 +1,26 @@
 # Site wide configuration
 
-title: Site Title
+title: Aidan Sawyer
 locale: en_US
 logo: logo.png # filename of a logo image that has been placed into your images directory
 
 # Enter the following platform usernames if you would like for them to appear on your site.
 owner:
-  name: Your Name
+  name: Aidan Sawyer
   avatar: #bio-photo.jpg
-  bio: "A brief description of yourself."
-  email: your.name@rochester.edu
-  # Do not include the @ symbol in your Twitter username
-  twitter: #username
-  linkedin: #username
+  bio: Staff at University of Rochester studying Library and Information Science
+  email: aidan.sawyer@rochester.edu
+  twitter: #twitter username (no '@')
+  linkedin: aidan-sawyer-8253a5a0
   github: atla5
-  orcid: # ID Number (ex. 0000-0000-0000-0000)
-  researchgate: #username
-  mendeley: #username
+  orcid: 0000-0003-3987-6563
+  researchgate: #researchgate username 
+  mendeley: #mendeley username 
   google:
     plus: #username
     analytics:
     verify:
-    scholar: #id
+    scholar: #google scholar 'user' id 
   facebook: #username
   instagram: #username
   bing-verify:
@@ -38,12 +37,12 @@ owner:
   weibo: #username
   flickr: #username
   codepen: #username
-  disqus-shortname:
+  disqus-shortname: #username
 
 # The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
 # you may do so in _sass/variables.scss
-highlight-color: '#FFC70A'
-lowlight-color: '#073661'
+highlight-color: '#FFC70A' #UR gold
+lowlight-color: '#073661' #UR navy
 
   # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
 creative-commons:
