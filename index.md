@@ -3,14 +3,18 @@ layout: page
 excerpt: "About Me..."
 ---
 
-See [form](/form) to get started
+## About this Site
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This project is meant to help students and researchers across University of Rochester create their
+  own hosted academic website for free with GitHub. 
 
-## Current Interests and Projects:
+It's based off of NCSU Libraries' [jekyll academic](https://ncsu-libraries.github.io/jekyll-academic-docs/workshop/).
 
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- DLorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
+
+## Creating Your Own
+
+To see a step-by-step guide to build your own site, go to the [research](/research) section. 
+  There you'll find a basic ['Getting Started' guide](/blog/getting-started) that will help you
+  create your new site, and a more [advanced tutorial](/blog/make-it-yours) showing you how
+  to customize it.
+  
