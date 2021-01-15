@@ -9,7 +9,6 @@ excerpt: form to help you build out your config.yml
     <form id="config-form" onchange="submitConfig(); event.preventDefault();" oninput="bio.value = role.value +' at University of Rochester studying ' + field.value ">
       <h2>General Configuration Form</h2>
       <p>Input the following information and see the output on the right</p>
-
       <section id="info">
         <h3>Required Information</h2>
         <p>
@@ -76,9 +75,7 @@ excerpt: form to help you build out your config.yml
       </section>
     </form>
   </section>
-
-  <section id="median"></section>
-
+  
   <section id="output">
     <h2>Output Configuration <button id="copy-btn" hidden onclick="copyToClipboard('#config-yml')">copy output</button></h2>
     <p>
