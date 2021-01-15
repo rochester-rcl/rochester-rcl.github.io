@@ -3,6 +3,8 @@ layout: page
 excerpt: "About Me..."
 ---
 
+# RCL Academic Site-Builder
+
 ## About this Site
 
 This project is meant to help students and researchers across University of Rochester create their
