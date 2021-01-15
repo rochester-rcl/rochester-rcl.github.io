@@ -19,6 +19,10 @@ This project is a slight customization based off of some great work by
 
 To see a step-by-step guide to build your own site, go to the [research](/research) section. 
   There you'll find a basic ['Getting Started' guide](/blog/getting-started) that will help you
-  create your new site, and a more [advanced tutorial](/blog/make-it-yours) showing you how
-  to customize it.
+  create your new site.
+  
+## Customizing Your Site
+
+We also have a more [advanced tutorial](/blog/make-it-yours) showing you how to customize your 
+  copy with different colors, pages, content, and more. 
   

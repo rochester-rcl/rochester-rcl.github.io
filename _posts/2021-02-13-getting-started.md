@@ -12,4 +12,7 @@ This tutorial (and this repository) is only a light customization on top of
   [NC State University Library](https://www.lib.ncsu.edu/)'s great work with 
   [Jekyll-Acamedic](https://ncsu-libraries.github.io/jekyll-academic-docs/workshop/).
 
-Instructions are available in PDF Form [LINK NEEDED] and will continue below in the future...
+Instructions are available in a shareable PDF [LINK NEEDED] and will continue below in the future...
+
+But in the meantime, try out our [form](/form) to get to work replacing our information with your 
+  own.
