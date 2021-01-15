@@ -44,10 +44,10 @@ Book Title, Journal Title
 ## Presentations
 
 `1994`
-Presentation Title, Conference, <a href="https://MyWebsite.tld/presentation1">Link to Presentation</a>
+Presentation Title, Conference
 
 
-## Occupation
+## Employment History
 
 `Current`
 __Current Job Title__, Current Employer 
@@ -62,9 +62,5 @@ __Current Job Title__, Current Employer
 - Task
 
 
-
-<!-- ### Footer
-
-Last updated: May 2013 -->
 
 
