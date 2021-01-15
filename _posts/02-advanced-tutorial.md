@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Building your Own Scholarly Website
-excerpt: "A step-by-step guide to creating your own academic website with free hosting using GitHub and Jekyll"
-modified: 2/13/2021, 10:00:24
-tags: [intro, beginner, jekyll, tutorial]
+title: Customizing Your New Site
+excerpt: "Now that you've made your own site, here's how to make it your own by updating its content and even adding pages."
+modified: 2/15/2021
+tags: [intro, advanced, jekyll, tutorial]
 comments: true
-category: post
+category: blog
 ---
 
 This tutorial (and this repository) is only a light customization on top of
@@ -13,3 +13,4 @@ This tutorial (and this repository) is only a light customization on top of
   [Jekyll-Acamedic](https://ncsu-libraries.github.io/jekyll-academic-docs/workshop/).
 
 Instructions are available in PDF Form [LINK NEEDED] and will continue below in the future...
+
