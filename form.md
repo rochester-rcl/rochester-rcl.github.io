@@ -10,7 +10,7 @@ excerpt: form to help you build out your config.yml
       <h2>General Configuration Form</h2>
       <p>Input the following information and see the output on the right</p>
       <section id="info">
-        <h3>Required Information</h2>
+        <h3>Required Information</h3>
         <p>
           <label for="name">Full Name </label>
           <input id="name" name="name" type="text" placeholder="Sarah Pugachev" required>
@@ -37,13 +37,9 @@ excerpt: form to help you build out your config.yml
           <label for="field">Field/Department/Specialty </label>
           <input id="field" name="field" type="text" placeholder="Chemistry" required>
         </p>
-        <p>
-          <strong>output bio: </strong>
-          <em><output name="bio" for="role field">University of Rochester Affiliate</output></em>
-        </p>
       </section>
       <section id="accounts">
-        <h3>Additional Links</h2>
+        <h3>Additional Links</h3>
         <p>
           <label for="resume">Resume </label>
           <input id="resume" name="resume" type="text" placeholder="https://website.com/resume.pdf">
@@ -75,7 +71,7 @@ excerpt: form to help you build out your config.yml
       </section>
     </form>
   </section>
-  
+
   <section id="output">
     <h2>Output Configuration <button id="copy-btn" hidden onclick="copyToClipboard('#config-yml')">copy output</button></h2>
     <p>
