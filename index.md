@@ -3,14 +3,16 @@ layout: page
 excerpt: "About Me..."
 ---
 
-# RCL Academic Site-Builder
-
-## About this Site
-
 This project is meant to help students and researchers across University of Rochester create their
   own hosted academic website for free with GitHub. 
 
-It's based off of NCSU Libraries' [jekyll academic](https://ncsu-libraries.github.io/jekyll-academic-docs/workshop/).
+## About this Site
+
+This project is a slight customization based off of some great work by 
+  [NC State University Libraries](https://www.lib.ncsu.edu/).
+  The original project, called [`jekyll academic`](https://ncsu-libraries.github.io/jekyll-academic-docs/)
+  has its own [github repository](https://github.com/NCSU-Libraries/jekyll-academic)
+  and [workshop documentation](https://ncsu-libraries.github.io/jekyll-academic-docs/workshop/). 
 
 
 ## Creating Your Own
