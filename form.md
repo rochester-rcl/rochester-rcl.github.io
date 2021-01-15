@@ -70,11 +70,12 @@ excerpt: form to help you build out your config.yml
         </p>
       </section>
     </form>
+    <br><br><br>
   </section>
 
   <section id="output">
     <h2>Output Configuration</h2>
-    <button id="copy-btn" hidden onclick="copyToClipboard('#config-yml')">copy output</button>
+    <button id="copy-btn" disabled onclick="copyToClipboard('#config-yml')">copy output</button>
     <br><br>
     <p>
       <em>
@@ -86,3 +87,4 @@ excerpt: form to help you build out your config.yml
     <textarea style="width: 100%; height:100%; cursor: auto;" readonly id="config-yml">Please fill in all required fields!</textarea>
   </section>
 </main>
+

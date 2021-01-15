@@ -103,9 +103,9 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
       if(form.checkValidity()){ // if required fields are present, update the output pane
         document.getElementById("config-yml").innerHTML = config_yml(formData);
-        document.getElementById("copy-btn").hidden = false;
+        document.getElementById("copy-btn").disabled = false;
       }else{
-        document.getElementById("copy-btn").hidden = true;
+        document.getElementById("copy-btn").disabled = true;
         document.getElementById("config-yml").innerText = `Please fill in all required fields!`;
       }
     }
