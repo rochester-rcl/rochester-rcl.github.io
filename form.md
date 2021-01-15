@@ -4,7 +4,7 @@ title: Form Helper
 excerpt: form to help you build out your config.yml
 ---
 
-<main>
+<main style="width: 90vw;">
   <section id="input">
     <form id="config-form" onchange="submitConfig(); event.preventDefault();" oninput="bio.value = role.value +' at University of Rochester studying ' + field.value ">
       <h2>General Configuration Form</h2>
@@ -73,7 +73,9 @@ excerpt: form to help you build out your config.yml
   </section>
 
   <section id="output">
-    <h2>Output Configuration <button id="copy-btn" hidden onclick="copyToClipboard('#config-yml')">copy output</button></h2>
+    <h2>Output Configuration</h2>
+    <button id="copy-btn" hidden onclick="copyToClipboard('#config-yml')">copy output</button>
+    <br><br>
     <p>
       <em>
         A copy of the config will appear after all required fields are filled in.
@@ -81,6 +83,6 @@ excerpt: form to help you build out your config.yml
         then use it to replace the existing contents of your <code>_config.yml</code> file
       </em>
     </p>
-    <textarea style="width: 100%; height:100%;" readonly id="config-yml">Please fill in all required fields!</textarea>
+    <textarea style="width: 100%; height:100%; cursor: auto;" readonly id="config-yml">Please fill in all required fields!</textarea>
   </section>
 </main>
