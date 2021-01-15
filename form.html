@@ -52,6 +52,7 @@ owner:
   flickr: #username
   codepen: #username
   disqus-shortname: #username
+  resume: ${parsedData["resume"] || "#link to pdf" } 
 
 # The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
 # you may do so in _sass/variables.scss
@@ -175,7 +176,11 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
           </p>
         </section>
         <section id="accounts">
-          <h3>Additional Accounts and IDs</h2>
+          <h3>Additional Links</h2>
+          <p>
+            <label for="resume">Resume </label>
+            <input id="resume" name="resume" type="text" placeholder="https://website.com/resume.pdf">
+          </p>
           <p>
             <label for="orcid">Orcid </label>
             <input id="orcid" name="orcid" type="text" placeholder="0000-0003-2672-208X">
