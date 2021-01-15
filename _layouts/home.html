@@ -16,19 +16,23 @@
   <div class="article-author-side">
     {% include _author-bio.html %}
   </div>
-  <div id="index">
-    <h3><a href="{{ site.github.url}}/archive/">Recent Posts</a></h3>
+  <article class="page">
+    <h1>{{site.title}}</h1>
+    {{content}}
+  </article>
+  <aside>
+    <h3><a href="{{ site.github.url}}/posts/">Recent Posts</a></h3>
     {% for post in site.categories.blog limit:5 %}
-    <article>
+    <section>
       {% if post.link %}
         <h2 class="link-post"><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
       {% else %}
         <h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
         <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
       {% endif %}
-    </article>
+    </section>
     {% endfor %}
-  </div><!-- /#index -->
+  </aside>
 </div><!-- /#main -->
 
 <div class="footer-wrap">

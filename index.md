@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 excerpt: "About Me..."
 ---
 
