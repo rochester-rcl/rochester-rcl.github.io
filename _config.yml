@@ -14,7 +14,7 @@ owner:
   twitter: #twitter username (no '@')
   linkedin: aidan-sawyer-8253a5a0
   github: atla5
-  orcid: # ID Number (ex. 0000-0000-0000-0000)
+  orcid: 0000-0003-3987-6563
   researchgate: #researchgate username 
   mendeley: #mendeley username 
   google:
@@ -39,7 +39,7 @@ owner:
   flickr: #username
   codepen: #username
   disqus-shortname: #username
-  resume: #link to pdf
+  resume: https://github.com/atla5/resume/raw/master/build/Resume_Sawyer.pdf 
 
 # The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
 # you may do so in _sass/variables.scss
