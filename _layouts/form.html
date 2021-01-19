@@ -124,6 +124,11 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
       background-color: white; 
     }
 
+    main > section#output textarea { 
+      height: 100%; height: -webkit-fill-available;
+      width: 100%; width: -webkit-fill-available;
+      cursor: auto;
+    }
     main > section#output { 
       width: 50%; 
       min-width: 350px;

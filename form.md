@@ -82,13 +82,13 @@ excerpt: form to help you build out your config.yml
     <button id="copy-btn" disabled onclick="copyToClipboard('#config-yml')">copy output</button>
     <br><br>
     <p>
-      <em>
-        A copy of the config will appear after all required fields are filled in.
-        Once it appears, click on the "copy output" button to add it to your clipboard, 
-        then use it to replace the existing contents of your <code>_config.yml</code> file
-      </em>
+      A copy of the config will appear after all required fields are filled in.
+      Once it appears, click on the "copy output" button to add it to your clipboard, 
+      then use it to replace the existing contents of 
+      <strong><a href="https://github.com/{{ author.github }}/{{ author.github }}.github.io/edit/master/_config.yml" 
+        target="blank">your <code>_config.yml</code> file</a></strong>.
     </p>
-    <textarea style="width: 100%; height:100%; cursor: auto;" readonly id="config-yml">Please fill in all required fields!</textarea>
+    <textarea readonly id="config-yml">Please fill in all required fields!</textarea>
   </section>
 </main>
 
