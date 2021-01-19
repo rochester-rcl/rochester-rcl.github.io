@@ -6,7 +6,7 @@ excerpt: form to help you build out your config.yml
 
 <main style="width: 90vw;">
   <section id="input">
-    <form id="config-form" onchange="submitConfig(); event.preventDefault();" oninput="bio.value = role.value +' at University of Rochester studying ' + field.value ">
+    <form id="config-form" onchange="submitConfig(); event.preventDefault();">
       <h2>General Configuration Form</h2>
       <p>Input the following information and see the output on the right</p>
       <section id="info">
