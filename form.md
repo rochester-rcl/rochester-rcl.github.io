@@ -41,6 +41,10 @@ excerpt: form to help you build out your config.yml
       <section id="accounts">
         <h3>Additional Links</h3>
         <p>
+          <label for="website">Website </label>
+          <input id="website" name="website" type="text" placeholder="https://library.rochester.edu">
+        </p>
+        <p>
           <label for="resume">Resume </label>
           <input id="resume" name="resume" type="text" placeholder="https://website.com/resume.pdf">
         </p>
