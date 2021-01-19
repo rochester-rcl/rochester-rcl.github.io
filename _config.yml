@@ -10,7 +10,7 @@ owner:
   name: University of Rochester Libraries
   avatar: #bio-photo.jpg
   bio: An academic website builder based off of NCSU Libraries' "jekyll academic"
-  website: library.rochester.edu
+  website: https://library.rochester.edu
   email: rclfeedback@library.rochester.edu #personal email
   twitter: RCLibraries
   linkedin: aidan-sawyer-8253a5a0
