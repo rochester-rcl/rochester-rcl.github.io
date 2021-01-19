@@ -13,15 +13,15 @@ excerpt: form to help you build out your config.yml
         <h3>Required Information</h3>
         <p>
           <label for="name">Full Name </label>
-          <input id="name" name="name" type="text" placeholder="Sarah Pugachev" required>
+          <input id="name" name="name" type="text" placeholder="River Campus Libraries" required>
         </p>
         <p>
           <label>UR Email </label>
-          <input id="email" name="email" type="email" placeholder="sarah.pugachev@rochester.edu" required>
+          <input id="email" name="email" type="email" placeholder="rclfeedback@library.rochester.edu" required>
         </p>
         <p>
           <label for="github">Github </label>
-          <input id="github" name="github" type="text" placeholder="sclayton29" required>
+          <input id="github" name="github" type="text" placeholder="rochester-rcl" required>
         </p>
         <p>
           <label for="role">Role at UofR</label>
@@ -50,19 +50,19 @@ excerpt: form to help you build out your config.yml
         </p>
         <p>
           <label for="orcid">Orcid </label>
-          <input id="orcid" name="orcid" type="text" placeholder="0000-0003-2672-208X">
+          <input id="orcid" name="orcid" type="text" placeholder="0000-0001-1234-567B">
         </p>
         <p>
           <label for="scholar">Google Scholar ID </label>
-          <input id="scholar" name="scholar" type="text" placeholder="rnl83BsAAAAJ">
+          <input id="scholar" name="scholar" type="text" placeholder="rcl21UofRAAAB">
         </p>
         <p>
           <label for="twitter">Twitter @</label>
-          <input id="twitter" name="twitter" type="text" placeholder="sclayton29">
+          <input id="twitter" name="twitter" type="text" placeholder="RCLibraries">
         </p>
         <p>
           <label for="linkedin">LinkedIn </label>
-          <input id="linkedin" name="linkedin" type="text" placeholder="sarah-pugachev-1562212a">
+          <input id="linkedin" name="linkedin" type="text" placeholder="fname-lname-1234567a">
         </p>
         <p>
           <label for="mendeley">Mendeley </label>
