@@ -64,8 +64,8 @@ owner:
 
 # The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
 # you may do so in _sass/variables.scss
-highlight-color: '#FFC70A' #UR gold
-lowlight-color: '#073661' #UR navy
+lowlight-color: ${parsedData["color1"] || '#073661 #UR navy'}
+highlight-color: ${parsedData["color2"] || '#FFC70A #UR gold'}
 
   # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
 creative-commons:
@@ -230,6 +230,17 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
           <p>
             <label for="researchgate">ResearchGate </label>
             <input id="researchgate" name="researchgate" type="text" placeholder="">
+          </p>
+        </section>
+        <section>
+          <h3>Customize</h3>
+          <p>
+            <label for="color1">Primary Color</label>
+            <input id="color1" name="color1" type="color" value="#073661">
+          </p>
+          <p>
+            <label for="color2">Highlight Color</label>
+            <input id="color2" name="color2" type="color" value="#FFC70A">
           </p>
         </section>
       </form>
