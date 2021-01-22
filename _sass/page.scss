@@ -22,6 +22,15 @@ body {
 	border-bottom-style: solid;
 	border-bottom-color: $highlightcolor;
 	border-bottom-width: .5em;
+	display: flex;
+
+	div.feedback {
+		@media #{$small} {
+			display: none;
+		}
+		margin-left: auto;
+		margin-right: 10%;
+	}
 }
 
 /* Site name */
