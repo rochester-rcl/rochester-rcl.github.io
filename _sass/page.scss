@@ -26,6 +26,7 @@ body {
 
 	div.feedback {
 		display: none;
+		min-width: 125px;
 		@media #{$medium} { display: block; }
 		margin-left: auto;
 		margin-right: 5%;
@@ -665,14 +666,14 @@ $button-size: 1.5rem;
 		@include prefix(12,1);
 		@include suffix(12,1);
 		@media #{$small} {
-			@include grid(12,6);
-			@include prefix(12,3);
-			@include suffix(12,3);
+			@include grid(12,8);
+			@include prefix(12,2);
+			@include suffix(12,2);
 		}
 		@media #{$x-large} {
-			@include grid(12,4.5);
-			@include prefix(12,4);
-			@include suffix(12,3.5);
+			@include grid(12,8);
+			@include prefix(12,2);
+			@include suffix(12,2);
 		}
 	}
 }
