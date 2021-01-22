@@ -25,11 +25,11 @@ body {
 	display: flex;
 
 	div.feedback {
-		@media #{$small} {
-			display: none;
-		}
+		display: block;
+		@media #{ $small } { display: none; }
+		@media #{ $medium } { display: block; }
 		margin-left: auto;
-		margin-right: 10%;
+		margin-right: 5%;
 	}
 }
 
