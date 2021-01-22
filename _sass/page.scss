@@ -26,8 +26,8 @@ body {
 
 	div.feedback {
 		display: block;
-		@media #{ $small } { display: none; }
-		@media #{ $medium } { display: block; }
+		@media #{$micro} { display: none; }
+		@media #{$small} { display: none; }
 		margin-left: auto;
 		margin-right: 5%;
 	}
