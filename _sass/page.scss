@@ -640,6 +640,8 @@ $button-size: 1.5rem;
 	clear: both;
 	padding-bottom: 3em;
 	text-align: center;
+	a { font-weight: bold; }
+	a:hover { text-decoration: underline; }
 	a,
 	a:active,
 	a:visited,
