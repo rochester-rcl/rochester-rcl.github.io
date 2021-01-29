@@ -97,10 +97,14 @@ include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 `
   };
-    
+
     function submitConfig(){
       let form = document.getElementById("config-form");
       let formData = Object.values(form).reduce((obj,field) => { obj[field.name] = field.value; return obj }, {});
+      
+      // get selected role from 'select#role'
+      let roleSelector = document.getElementById("role");
+      formData["role"] = roleSelector.options[roleSelector.selectedIndex].text;
 
       if(form.checkValidity()){ // if required fields are present, update the output pane
         formData["bio"] = formData["role"]+" at University of Rochester studying "+formData["field"] || "University of Rochester affiliate";
@@ -187,11 +191,11 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
           <p>
             <label for="role">Role at UofR</label>
             <select id="role" required>
-              <option value="Undergraduate Student">Undergraduate Student</option>
-              <option value="Graduate Student">Graduate Student</option>
-              <option value="Researcher">Researcher</option>
-              <option value="Professor">Professor</option>
-              <option value="Staff">Staff</option>
+              <option>Undergraduate Student</option>
+              <option>Graduate Student</option>
+              <option>Researcher</option>
+              <option>Professor</option>
+              <option>Staff</option>
             </select>
           </p>
           <p>
