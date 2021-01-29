@@ -11,9 +11,10 @@
       let text = document.querySelector(querySelection).innerHTML;
       navigator.clipboard.writeText(text)
         .then(function(){
-          alert("copied");
+          let gh_username = window.location.hostname.split(".")[0]; // e.g. https://[atla5].github.io
+          window.open(`https://github.com/${gh_username}/${gh_username}.github.io/edit/master/_config.yml`, "_target");
         }, function(){
-          alert("unable to copy. try selecting the content manually, right-clicking, and pressing 'copy'");
+          alert("unable to copy. try selecting the content manually, right-clicking, and pressing 'copy'. then go to your repo and change it there");
         }
       );
     }
@@ -253,10 +254,8 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
       <br><br>
       <p>
         A copy of the config will appear after all required fields are filled in.
-        Once it appears, click on the "copy output" button to add it to your clipboard, 
-        then use it to replace the existing contents of 
-        <strong><a href="https://github.com/{{ author.github }}/{{ author.github }}.github.io/edit/master/_config.yml" 
-          target="blank">your <code>_config.yml</code> file</a></strong>.
+        Once it appears, click on the "copy output" button to add it to your clipboard. 
+        You'll then be taken to a new tab where you can paste that output and commit the change.
       </p>
       <textarea readonly id="config-yml">Please fill in all required fields!</textarea>
     </section>
