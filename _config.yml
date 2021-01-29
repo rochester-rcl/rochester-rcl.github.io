@@ -1,21 +1,20 @@
 
 # Site wide configuration
 
-title: RCL SiteBuilder
+title: Aidan Sawyer
 locale: en_US
-logo: #logo.png # filename of a logo image that has been placed into your images directory
+logo: logo.png # filename of a logo image that has been placed into your images directory
 
 # Enter the following platform usernames if you would like for them to appear on your site.
 owner:
-  name: University of Rochester Libraries
+  name: Aidan Sawyer
   avatar: #bio-photo.jpg
-  bio: An academic website builder based off of NCSU Libraries' "jekyll academic"
-  website: https://library.rochester.edu
-  email: rclfeedback@library.rochester.edu #personal email
-  twitter: RCLibraries
-  linkedin: #linkedin id
-  github: rochester-rcl
-  orcid: #orcid id
+  bio: undefined
+  email: aidan.sawyer@rochester.edu
+  twitter: aidan_ks
+  linkedin: aidan-sawyer-8253a5a0
+  github: atla5
+  orcid: 0000-0003-3987-6563
   researchgate: #researchgate username 
   mendeley: #mendeley username 
   google:
@@ -23,8 +22,8 @@ owner:
     analytics:
     verify:
     scholar: #google scholar 'user' id 
-  facebook: rivercampuslibraries
-  instagram: rclibraries
+  facebook: #username
+  instagram: #username
   bing-verify:
   stackoverflow: #123456/username from a "https://stackoverflow.com/users/123456/username" link
   xing: #username
@@ -34,18 +33,18 @@ owner:
   foursquare: #username
   steam: #username
   dribbble: #username
-  youtube: RCLibraries
+  youtube: #username
   soundcloud: #username
   weibo: #username
   flickr: #username
   codepen: #username
   disqus-shortname: #username
-  resume: #link to a resume
+  resume: https://github.com/atla5/resume 
 
 # The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
 # you may do so in _sass/variables.scss
-highlight-color: '#FFC70A' #UR gold
-lowlight-color: '#073661' #UR navy
+lowlight-color: "#073661"
+highlight-color: "#ffc70a"
 
   # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
 creative-commons:
