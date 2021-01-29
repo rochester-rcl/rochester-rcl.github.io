@@ -19,7 +19,7 @@
       );
     }
     
-    const config_yml = (parsedData) => {
+    const generateConfig = (parsedData) => {
 return `
 # Site wide configuration
 
@@ -31,7 +31,7 @@ logo: # logo.png # filename of a logo image that has been placed into your image
 owner:
   name: ${parsedData["name"]}
   avatar: #bio-photo.jpg
-  bio: ${parsedData["role"]+" at University of Rochester studying "+parsedData["field"] || "University of Rochester affiliate"} 
+  bio: ${parsedData["bio"] || "University of Rochester affiliate"} 
   email: ${parsedData["email"]}
   twitter: ${parsedData["twitter"].replace("@","") || "#twitter username (no '@')" }
   linkedin: ${parsedData["linkedin"].replace("@","") || "#linkedin" }
@@ -103,7 +103,8 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
       let formData = Object.values(form).reduce((obj,field) => { obj[field.name] = field.value; return obj }, {});
 
       if(form.checkValidity()){ // if required fields are present, update the output pane
-        document.getElementById("config-yml").innerHTML = config_yml(formData);
+        formData["bio"] = formData["role"]+" at University of Rochester studying "+formData["field"] || "University of Rochester affiliate";
+        document.getElementById("config-yml").innerHTML = generateConfig(formData);
         document.getElementById("copy-btn").disabled = false;
       }else{
         document.getElementById("copy-btn").disabled = true;
