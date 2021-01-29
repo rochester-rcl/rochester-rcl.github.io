@@ -31,7 +31,7 @@ logo: # logo.png # filename of a logo image that has been placed into your image
 owner:
   name: ${parsedData["name"]}
   avatar: #bio-photo.jpg
-  bio: ${formData["role"]+" at University of Rochester studying "+formData["field"] || "University of Rochester affiliate"} 
+  bio: ${parsedData["role"]+" at University of Rochester studying "+parsedData["field"] || "University of Rochester affiliate"} 
   email: ${parsedData["email"]}
   twitter: ${parsedData["twitter"].replace("@","") || "#twitter username (no '@')" }
   linkedin: ${parsedData["linkedin"].replace("@","") || "#linkedin" }
@@ -197,7 +197,6 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
             <label for="field">Field/Department/Specialty </label>
             <input id="field" name="field" type="text" placeholder="Chemistry" required>
           </p>
-          <em><output name="bio" for="role field">University of Rochester Affiliate</output></em>
         </section>
         <section id="accounts">
           <h3>Additional Links</h3>
