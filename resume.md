@@ -3,8 +3,9 @@ layout: resume
 ---
 ## Resume 
 
-## Currently
 <b> Use this template to share your accomplishments </b>  
+
+## Currently
 
 Current Position Description
 
