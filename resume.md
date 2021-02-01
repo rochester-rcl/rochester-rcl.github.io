@@ -1,6 +1,7 @@
 ---
 layout: resume
 ---
+### <i>Use this template to share your accomplishments</i>
 ## Currently
 
 Current Position Description
