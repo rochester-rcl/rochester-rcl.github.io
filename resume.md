@@ -3,7 +3,8 @@ layout: resume
 ---
 
 ## Currently
-Use this template to share your accomplishments
+Use this template to share your accomplishments  
+
 Current Position Description
 
 ## Education
