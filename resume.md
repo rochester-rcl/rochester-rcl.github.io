@@ -1,9 +1,9 @@
 ---
 layout: resume
 ---
-## Use this template to share your accomplishments
-## Currently
 
+## Currently
+Use this template to share your accomplishments
 Current Position Description
 
 ## Education
