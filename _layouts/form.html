@@ -11,12 +11,15 @@
       let text = document.querySelector(querySelection).innerHTML;
       navigator.clipboard.writeText(text)
         .then(function(){
-          let gh_username = window.location.hostname.split(".")[0]; // e.g. https://[atla5].github.io
-          window.open(`https://github.com/${gh_username}/${gh_username}.github.io/edit/master/_config.yml`, "_target");
+          alert("config file content copied to your clipboard successfully.");
         }, function(){
           alert("unable to copy. try selecting the content manually, right-clicking, and pressing 'copy'. then go to your repo and change it there");
         }
       );
+    }
+    function editMyConfig(){
+      let gh_username = window.location.hostname.split(".")[0]; // e.g. [atla5].github.io/form
+      window.open(`https://github.com/${gh_username}/${gh_username}.github.io/edit/master/_config.yml`, "_target");
     }
     
     const generateConfig = (parsedData) => {
@@ -107,11 +110,13 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
       formData["role"] = roleSelector.options[roleSelector.selectedIndex].text;
 
       if(form.checkValidity()){ // if required fields are present, update the output pane
-        formData["bio"] = formData["role"]+" at University of Rochester studying "+formData["field"] || "University of Rochester affiliate";
+        formData["bio"] = formData["role"]+" at University of Rochester, "+formData["field"] || "University of Rochester affiliate";
         document.getElementById("config-yml").innerHTML = generateConfig(formData);
         document.getElementById("copy-btn").disabled = false;
+        document.getElementById("edit-btn").disabled = false;
       }else{
         document.getElementById("copy-btn").disabled = true;
+        document.getElementById("edit-btn").disabled = true;
         document.getElementById("config-yml").innerText = `Please fill in all required fields!`;
       }
     }
@@ -169,7 +174,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 <div id="main" role="main">
   <div>{{content}}</div>
 
-  <main style="width: 90vw;">
+  <main>
     <section id="input">
       <form id="config-form" onchange="submitConfig(); event.preventDefault();">
         <h2>General Configuration Form</h2>
@@ -194,7 +199,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
               <option>Undergraduate Student</option>
               <option>Graduate Student</option>
               <option>Researcher</option>
-              <option>Professor</option>
+              <option>Faculty</option>
               <option>Staff</option>
             </select>
           </p>
@@ -255,7 +260,10 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
     <section id="output">
       <h2>Output Configuration</h2>
-      <button id="copy-btn" disabled onclick="copyToClipboard('#config-yml')">copy output</button>
+      <div class="ctas">
+        <button id="copy-btn" disabled onclick="copyToClipboard('#config-yml')">copy config</button>
+        <button id="edit-btn" disabled onclick="editMyConfig()">edit my config</button>
+      </div>
       <br><br>
       <p>
         A copy of the config will appear after all required fields are filled in.
