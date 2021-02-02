@@ -1,7 +1,7 @@
 ---
+title: Resume
 layout: resume
 ---
-## Resume 
 
 <b> Use this template to share your accomplishments </b>  
 
