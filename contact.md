@@ -9,5 +9,4 @@ Have questions about the repository, or how to contribute? Any suggestions for h
 
 Are you having trouble customizing the site or working through the tutorial and need some
   personalized help? Or maybe you would you like to do something similar at your own
-  institution? Our inbox is always open, and you're welcome to 
-  <a href="mailto:rclfeedback@library.rochester.edu">email us</a> at any time. 
+  institution? You're welcome to <a href="mailto:ssiddiqui@library.rochester.edu">email us</a> at any time. 
