@@ -17,7 +17,7 @@ This project is a slight customization based off of some great work by
 
 ## Creating Your Own
 
-To see a step-by-step guide to build your own site, go to the [research](/research) section. 
+To see a step-by-step guide to build your own site, go to the [RESEARCH](/research) section. 
   There you'll find a basic [guide](/blog/getting-started) that will help you
   create your new site.
   
