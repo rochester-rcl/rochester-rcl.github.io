@@ -1,5 +1,5 @@
 ---
-layout: test
+layout: home
 excerpt: "About Me..."
 ---
 
